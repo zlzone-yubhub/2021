@@ -43,8 +43,9 @@ int main(void)  //main 함수 시작
 
 	printf("입력된 정수의 총합은 : %d \n", result1);
 	
-   int dan = 0, num4 = 10;
-    printf("\n몇 단?: ");
+        int dan = 0, num4 = 10;
+        
+	printf("\n몇 단?: ");
 	scanf_s("%d", &dan);
 	
 	while (--num4)
