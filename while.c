@@ -1,24 +1,68 @@
 /*
-Á¦¸ñ: while
-±â´É: while¹®ÀÇ È°¿ë
-ÆÄÀÏ ÀÌ¸§: while.c
-¼öÁ¤³¯Â¥: 20210110
-ÀÛ¼ºÀÚ:zlzoneyub
+ì œëª©: while
+ê¸°ëŠ¥: whileë¬¸ì˜ í™œìš©
+íŒŒì¼ ì´ë¦„: while.c
+ìˆ˜ì •ë‚ ì§œ: 20210111
+ì‘ì„±ì:zlzoneyub
 */
-#include <stdio.h>  //Çì´õÆÄÀÏ ¼±¾ğ
+#include <stdio.h>  //í—¤ë”íŒŒì¼ ì„ ì–¸
 
-int main(void)  //main ÇÔ¼ö ½ÃÀÛ
+int main(void)  //main í•¨ìˆ˜ ì‹œì‘
 {
 	int num1;
 	int x = 0;
-		printf("¾çÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À: \n");
+	printf("ì–‘ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤: ");
 	scanf_s("%d", &num1);
 	
-	while (x < num1);
+	while (x < num1)
 	
 	{
-		printf("helloworld \n");
+            printf("hello world \n");
 	    x++;
 	}
+
+	int num2=0;
+	int x2 = 0;
+	printf("\nì–‘ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤:");
+	scanf_s("%d", &num2);
+	
+	while (x2++ < num2)
+
+	    printf("%d*%d=%d\n", 3, x2, 3 * x2);
+
+	int num3=1;
+	int result1=0;
+	printf("\në”í•˜ê³  ì‹¶ì€ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹­ì‹œì˜¤.\n");
+	printf("0ì„ ì…ë ¥í•˜ë©´ ì´í•©ì„ ê³„ì‚°í•©ë‹ˆë‹¤. \n");
+
+	while (num3)
+	{  
+		scanf_s("%d", &num3);
+		result1 += num3;
+	}
+
+	printf("ì…ë ¥ëœ ì •ìˆ˜ì˜ ì´í•©ì€ : %d \n", result1);
+	
+   int dan = 0, num4 = 10;
+    printf("\nëª‡ ë‹¨?: ");
+	scanf_s("%d", &dan);
+	
+	while (--num4)
+	printf(" %d*%d=%d \n", dan, num4, dan * num4);
+
+	int num5, num6;
+	int num7 = 0;
+	int result2 = 0, result3 = 0;
+	printf("\nëª‡ ê°œì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹­ë‹ˆê¹Œ? : ");
+	scanf_s("%d", &num5);
+
+	while (num7++ < num5)
+	{
+		scanf_s("%d", &num6);
+		result2 += num6;
+	}
+	result3 = result2 / num5;
+	printf("í‰ê· ê°’ì€?: %f", (double)result3);
 	return 0;
+
 }
