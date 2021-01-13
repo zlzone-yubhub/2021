@@ -1,29 +1,29 @@
 /*
-Á¦¸ñ: whilewhile
-±â´É: while¹®ÀÇ ÁßÃ¸
-ÆÄÀÏ ÀÌ¸§: whilewhile.c
-¼öÁ¤³¯Â¥: 20210113
-ÀÛ¼ºÀÚ:zlzoneyub
+ì œëª©: whilewhile
+ê¸°ëŠ¥: whileë¬¸ì˜ ì¤‘ì²©
+íŒŒì¼ ì´ë¦„: whilewhile.c
+ìˆ˜ì •ë‚ ì§œ: 20210113
+ì‘ì„±ì:zlzoneyub
 */
 
-#include <stdio.h>  //Çì´õÆÄÀÏ ¼±¾ğ
+#include <stdio.h>  //í—¤ë”íŒŒì¼ ì„ ì–¸
 
-int main(void)  //main ÇÔ¼ö ½ÃÀÛ
+int main(void)  //main í•¨ìˆ˜ ì‹œì‘
 {
-	int num1, num2 = 1;
+	int num1 = 0, num2 = 0;
 	int result1=0;
 
-	while (num2 < 6)
+	while (num2 < 5)
 	{
-		while (num2 <= 0)
+		while (num1 <= 0)
 		{
-			printf("0º¸´Ù Å« ¼ö¸¦ ÀÔ·Â(%d¹øÂ°): ", num2);
+			printf("0ë³´ë‹¤ í° ìˆ˜ë¥¼ ì…ë ¥(%dë²ˆì§¸): ", num2+1);
 			scanf_s("%d", &num1);
 		}
 		result1 += num1;
 		num1 = 0;
 		num2++;
 	}
-	printf("ÃÑ ÇÕÀº %d", result1);
+	printf("ì´ í•©ì€ %d", result1);
 	return 0;
 }
