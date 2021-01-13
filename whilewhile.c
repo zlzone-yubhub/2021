@@ -25,5 +25,22 @@ int main(void)  //main 함수 시작
 		num2++;
 	}
 	printf("총 합은 %d", result1);
+	
+	int num3 =0;
+	int num4 = 0;
+
+	printf("\n*\n");
+
+	while(++num3)
+	{
+		while (num4 < num3)
+		{
+			printf("0 ");
+			num4++;
+		}
+		num4 = 0;
+		printf("*\n");
+		
+	    
+	}
 	return 0;
-}
