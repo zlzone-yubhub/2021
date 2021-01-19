@@ -1,24 +1,24 @@
 /*
-Á¦¸ñ: if else
-±â´É: if¹®ÀÇ ¿¬½À
-ÆÄÀÏ ÀÌ¸§: ifelse.c
-¼öÁ¤³¯Â¥: 20210119
-ÀÛ¼ºÀÚ:zlzoneyub
+ì œëª©: if else
+ê¸°ëŠ¥: ifë¬¸ì˜ ì—°ìŠµ
+íŒŒì¼ ì´ë¦„: ifelse.c
+ìˆ˜ì •ë‚ ì§œ: 20210119
+ì‘ì„±ì:zlzoneyub
 */
 
-#include <stdio.h>   //Çì´õÆÄÀÏ ¼±¾ğ
+#include <stdio.h>   //í—¤ë”íŒŒì¼ ì„ ì–¸
 
-int main(void)  //main ÇÔ¼ö ½ÃÀÛ
+int main(void)  //main í•¨ìˆ˜ ì‹œì‘
 {
 	int num1;
 
-	printf("7 ¶Ç´Â 9ÀÇ ¹è¼ö\n");
+	printf("7 ë˜ëŠ” 9ì˜ ë°°ìˆ˜\n");
 	for (num1 = 1; num1 < 100; num1++)
 		if(num1%7 == 0 || num1%9 == 0)
 			printf("%d\n", num1);
 
 	int num2, num3, result1;
-	printf("\n\nµÎ Á¤¼ö ÀÔ·Â:\n");
+	printf("\n\në‘ ì •ìˆ˜ ì…ë ¥:\n");
 	scanf_s("%d %d", &num2, &num3);
 	
 	if (num2 < num3)
@@ -26,32 +26,33 @@ int main(void)  //main ÇÔ¼ö ½ÃÀÛ
 	else
 		result1 = num2 - num3;
 	
-	printf("°á°ú %d\n", result1);
+	printf("ê²°ê³¼ %d\n\n", result1);
 
-	double num4, num5, num6;
-	printf("¼ºÀûÀ» ÀÔ·ÂÇÏ½Ã¿À\n");
-	scanf_s("%f %f %f", &num4, &num5, &num6);
+	double result2, num4, num5, num6;
+	
+	printf("ì„±ì ì„ ì…ë ¥í•˜ì‹œì˜¤\n");
+	scanf_s("%lf %lf %lf", &num4, &num5, &num6);
 
-	double result2 = num4 + num5 + num6 / 3;
+	result2 = num4 + num5 + num6 / 3.0;
 
-	if (result2 >= 90)
+	if (result2 >= 90.0)
 		printf("A");
-	else if (result2 >= 80)
+	else if (result2 >= 80.0)
 		printf("B");
-	else if (result2 >= 70)
+	else if (result2 >= 70.0)
 		printf("C");
-	else if (result2 >= 50)
+	else if (result2 >= 50.0)
 		printf("D");
 	else 
 		printf("F");
 	
 	int num7, num8, result3 = 0;
-	printf("\n\nµÎ Á¤¼ö ÀÔ·Â:\n");
+	printf("\n\në‘ ì •ìˆ˜ ì…ë ¥:\n");
 	scanf_s("%d %d", &num7, &num8);
 
-	(num7<num8) ? result3 = num7 - num8 : result3 = num7 - num8;
+	result3 = (num7<num8) ? num8 - num7 : num7 - num8;
 
-	printf("°á°ú %d\n", result3);
+	printf("ê²°ê³¼ %d\n", result3);
 	
 	return 0;
 }
