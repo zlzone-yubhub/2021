@@ -1,37 +1,37 @@
 /*
-Á¦¸ñ: Numcompare
-±â´É: ¼ıÀÚ ºñ±³
-ÆÄÀÏ ÀÌ¸§: Numcompare.c
-¼öÁ¤³¯Â¥: 20210123
-ÀÛ¼ºÀÚ:zlzoneyub
+ì œëª©: Numcompare
+ê¸°ëŠ¥: ìˆ«ì ë¹„êµ
+íŒŒì¼ ì´ë¦„: Numcompare.c
+ìˆ˜ì •ë‚ ì§œ: 20210123
+ì‘ì„±ì:zlzoneyub
 */
 
 #include <stdio.h>
 
 int Numbercompare1(int num1, int num2, int num3)
 {
-	if (num1 > num2)
-		return (num1 > num3) ? num1 : num3;
+	if (num1 >= num2)
+		return (num1 >= num3) ? num1 : num3;
 	else 
-		return (num2 > num3) ? num2 : num3;
+		return (num2 >= num3) ? num2 : num3;
 
 }
 
 int Numbercompare2(int num1, int num2, int num3)
 {
-	if (num1 < num2)
-		return (num1 < num3) ? num1 : num3;
+	if (num1 =< num2)
+		return (num1 =< num3) ? num1 : num3;
 	else
-		return (num2 < num3) ? num2 : num3;
+		return (num2 =< num3) ? num2 : num3;
 
 }
 
 int main(void)
 {
 	int num1, num2, num3;
-	printf("¼¼°³ÀÇ ´Ù¸¥ Á¤¼ö ÀÔ·Â\n");
+	printf("ì„¸ê°œì˜ ë‹¤ë¥¸ ì •ìˆ˜ ì…ë ¥\n");
 	scanf_s("%d %d %d", &num1, &num2, &num3);
-	printf("¼ÂÁß¿¡¼­ °¡Àå Å« ¼ö´Â %dÀÌ´Ù.\n", Numbercompare1(num1, num2, num3));
-	printf("¼ÂÁß¿¡¼­ °¡Àå ÀÛÀº ¼ö´Â %dÀÌ´Ù.\n", Numbercompare2(num1, num2, num3));
+	printf("ì…‹ì¤‘ì—ì„œ ê°€ì¥ í° ìˆ˜ëŠ” %dì´ë‹¤.\n", Numbercompare1(num1, num2, num3));
+	printf("ì…‹ì¤‘ì—ì„œ ê°€ì¥ ì‘ì€ ìˆ˜ëŠ” %dì´ë‹¤.\n", Numbercompare2(num1, num2, num3));
 	return 0;
 }
