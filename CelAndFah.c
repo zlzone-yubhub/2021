@@ -1,9 +1,9 @@
 /*
-Á¦¸ñ: CelAndFah
-±â´É: ¼·¾¾ È­¾¾ º¯È¯
-ÆÄÀÏ ÀÌ¸§: CelAndFah.c
-¼öÁ¤³¯Â¥: 20210125
-ÀÛ¼ºÀÚ:zlzoneyub
+ì œëª©: CelAndFah
+ê¸°ëŠ¥: ì„­ì”¨ í™”ì”¨ ë³€í™˜
+íŒŒì¼ ì´ë¦„: CelAndFah.c
+ìˆ˜ì •ë‚ ì§œ: 20210125
+ì‘ì„±ì:zlzoneyub
 */
 
 #include <stdio.h>       
@@ -20,13 +20,28 @@ double FahtoCel(double num2)
 
 int main(Void)
 {
+	int num;
+	printf("ì„­ì”¨->í™”ì”¨:1, í™”ì”¨->ì„­ì”¨:2\n");
+	scanf_s("%d", &num);
+
 	double num1, num2;
-	printf("È­¾¾·Î º¯È¯½ÃÅ³ ¼·¾¾¿Âµµ¸¦ ÀÔ·ÂÇÏ½Ã¿À.\n");
-	scanf_s("%lf", &num1);
-	printf("¼·¾¾ %lfµµ´Â È­¾¾ %lfµµÀÌ´Ù.\n", num1, CelToFah(num1));
-	printf("¼·¾¾·Î º¯È¯½ÃÅ³ È­¾¾¿Âµµ¸¦ ÀÔ·ÂÇÏ½Ã¿À.\n");
-	scanf_s("%lf", &num2);
-	printf("È­¾¾ %lfµµ´Â ¼·¾¾ %lfµµÀÌ´Ù.\n", num2, FahtoCel(num2));
+
+	if (num == 1)
+	{
+		printf("í™”ì”¨ë¡œ ë³€í™˜ì‹œí‚¬ ì„­ì”¨ì˜¨ë„ë¥¼ ì…ë ¥í•˜ì‹œì˜¤.\n");
+		scanf_s("%lf", &num1);
+		printf("ì„­ì”¨ %lfë„ëŠ” í™”ì”¨ %lfë„ì´ë‹¤.\n", num1, CelToFah(num1));
+	}
+
+	else if (num == 2)
+	{
+		printf("ì„­ì”¨ë¡œ ë³€í™˜ì‹œí‚¬ í™”ì”¨ì˜¨ë„ë¥¼ ì…ë ¥í•˜ì‹œì˜¤.\n");
+		scanf_s("%lf", &num2);
+		printf("í™”ì”¨ %lfë„ëŠ” ì„­ì”¨ %lfë„ì´ë‹¤.\n", num2, FahtoCel(num2));
+	}
+
+	else
+		printf("ì„ íƒì˜¤ë¥˜");
+	
 	return 0;
 }
-
